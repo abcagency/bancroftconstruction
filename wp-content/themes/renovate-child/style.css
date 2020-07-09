@@ -1,0 +1,60 @@
+/*
+Theme Name:   Renovate Child
+Description:  Renovate Child Theme
+Template:     renovate
+Version:      1.0
+Text Domain:  renovate
+*/
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: 400 !important;
+}
+
+.header .logo {
+    height: 100px !important; 
+    width: 140px !important;
+}
+
+.header-container {
+padding: 10px 0px !important;
+}
+.banner-page-text {
+text-shadow: 2px 2px #000;
+}
+/*****ICONS******/
+.wp-svg-custom-Untitled-1-01{
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
+.wp-svg-custom-Untitled-1-02{
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
+.wp-svg-custom-Untitled-1-01-01{
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
+.wp-svg-custom-Untitled-1-04 {
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
+.wp-svg-custom-Untitled-1-01-02{
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
+.wp-svg-custom-Untitled-1-07{
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
+.wp-svg-custom-Untitled-1-05{
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
+.wp-svg-custom-Untitled-1-01-03{
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
+.wp-svg-custom-PS-1-08{
+font-size: 8em !important;
+color:#0e6a36 !important;
+}
