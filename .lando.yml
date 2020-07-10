@@ -1,0 +1,6 @@
+name: bancroftconstruction
+recipe: pantheon
+config:
+  framework: wordpress
+  site: bancroftconstruction
+  id: d95ceb67-b5c6-4419-80ab-bace62c5b068
