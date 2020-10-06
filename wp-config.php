@@ -95,18 +95,20 @@ else:
       $http_host = $_SERVER['HTTP_HOST'];
 
       if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
-        if (substr($http_host, 0, 4) !== 'www.') {
+        if ($http_host !== 'live-bancroftconstruction.pantheonsite.io') {
+          if (substr($http_host, 0, 4) !== 'www.') {
 
-          $http_host_with_www = 'www.' . $http_host;
+            $http_host_with_www = 'www.' . $http_host;
 
-          # Name transaction "redirect" in New Relic for improved reporting (optional)
-          if (extension_loaded('newrelic')) {
-            newrelic_name_transaction("redirect");
+            # Name transaction "redirect" in New Relic for improved reporting (optional)
+            if (extension_loaded('newrelic')) {
+              newrelic_name_transaction("redirect");
+            }
+
+            header('HTTP/1.0 301 Moved Permanently');
+            header('Location: ' . $protocol . $http_host_with_www . $_SERVER['REQUEST_URI']);
+            exit();
           }
-
-          header('HTTP/1.0 301 Moved Permanently');
-          header('Location: ' . $protocol . $http_host_with_www . $_SERVER['REQUEST_URI']);
-          exit();
         }
       }
     endif;
