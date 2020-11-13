@@ -2,4 +2,8 @@
 # For more information, see: https://pantheon.io/docs/pantheon-yml/
 api_version: 1
 php_version: 7.0
+<<<<<<< HEAD
 enforce_https: transitional
+=======
+enforce_https: transitional
+>>>>>>> 2c9174f4e2764b1d36a1d5a6a067b7ab1c7b20e4
