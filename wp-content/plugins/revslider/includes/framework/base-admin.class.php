@@ -18,7 +18,7 @@ class RevSliderBaseAdmin extends RevSliderBase {
 	private static $tempVars = array();
 	private static $startupError = '';
 	private static $menuRole = 'admin';
-	private static $arrMetaBoxes = '';		//option boxes that will be added to post
+	private static $arrMetaBoxes = array();		//option boxes that will be added to post
 	
 	private static $allowed_views = array('master-view', 'system/validation', 'system/dialog-video', 'system/dialog-update', 'system/dialog-global-settings', 'sliders', 'slider', 'slider_template', 'slides', 'slide', 'navigation-editor', 'slide-editor', 'slide-overview', 'slide-editor', 'slider-overview', 'themepunch-google-fonts');
 	
@@ -202,7 +202,7 @@ class RevSliderBaseAdmin extends RevSliderBase {
 		if(function_exists("wp_enqueue_media"))
 			wp_enqueue_media();
 		
-		wp_enqueue_script(array('jquery', 'jquery-ui-core', 'jquery-ui-mouse', 'jquery-ui-accordion', 'jquery-ui-datepicker', 'jquery-ui-dialog', 'jquery-ui-slider', 'jquery-ui-autocomplete', 'jquery-ui-sortable', 'jquery-ui-droppable', 'jquery-ui-tabs', 'jquery-ui-widget', 'wp-color-picker'));
+		wp_enqueue_script(array('wp-util', 'jquery', 'jquery-ui-core', 'jquery-ui-mouse', 'jquery-ui-accordion', 'jquery-ui-datepicker', 'jquery-ui-dialog', 'jquery-ui-slider', 'jquery-ui-autocomplete', 'jquery-ui-sortable', 'jquery-ui-droppable', 'jquery-ui-tabs', 'jquery-ui-widget', 'wp-color-picker'));
 		
 		wp_enqueue_style(array('wp-jquery-ui', 'wp-jquery-ui-core', 'wp-jquery-ui-dialog', 'wp-color-picker'));
 		
