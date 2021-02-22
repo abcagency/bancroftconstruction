@@ -1297,5 +1297,5 @@ require self::getPathTemplate("../system/dialog-copy-move");
 </script>
 
 <?php
-require self::getPathTemplate('template-selector');
+// require self::getPathTemplate('template-selector');
 ?>
